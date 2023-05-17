@@ -25,6 +25,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to="/">Home</Link></li>
                         <li><Link >All Toys</Link></li>
+                        
                         <li><Link to="/blog">Blog</Link></li>
                     </ul>
                 </div>
@@ -34,6 +35,14 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to="/">Home</Link></li>
                     <li><Link >All Toys</Link></li>
+                    {/* {
+                        user ? <>
+                            <li><Link to="/myToys">My Toys</Link></li>
+                            <li><Link to="/addAToy">Add a Toy</Link></li>
+                        </>
+                            :
+                            ""
+                    } */}
                     <li><Link to="/blog">Blog</Link></li>
                 </ul>
             </div>
@@ -41,8 +50,8 @@ const Navbar = () => {
                 {
                     user ?
                         <>
-                            <div className="tooltip" data-tip={user.displayName}>
-                                <img src={user.photoURL} alt="" className="text-white h-14 rounded-full" />
+                            <div className="tooltip text-red" data-tip={user.displayName}>
+                                <img src={user.photoURL} alt="" className="text-red h-14 rounded-full" />
                             </div>
                             <button onClick={handleLogOut}>Log out</button>
                         </>

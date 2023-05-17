@@ -12,6 +12,8 @@ import Login from './pages/Shared/Login&SingUp/Login';
 import SignUp from './pages/Shared/Login&SingUp/SignUp';
 import Blog from './pages/Blog/Blog';
 import AuthProvider from './provider/AuthProvider';
+import MyToys from './pages/Shared/MyToys/MyToys';
+import AddAToy from './pages/Shared/AddAToy/AddAToy';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp></SignUp>
+      },
+      {
+        path: "myToys",
+        element: <MyToys></MyToys>
+      },
+      {
+        path: "addAToy",
+        element: <AddAToy></AddAToy>
       },
       {
         path: "blog",
