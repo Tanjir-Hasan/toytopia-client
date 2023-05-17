@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-footer {
+    @apply inline-flex justify-evenly font-medium items-center h-10 px-5 text-[#4a2d4c] transition-colors duration-150 bg-white rounded-full hover:bg-[#4a2d4c] hover:text-white;
+}
