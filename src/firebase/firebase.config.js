@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDxi-MopJqKPe5i8ge5EQDOtwAB7kvuPrE",
-  authDomain: "super-hero-squadron-client.firebaseapp.com",
-  projectId: "super-hero-squadron-client",
-  storageBucket: "super-hero-squadron-client.appspot.com",
-  messagingSenderId: "611592784629",
-  appId: "1:611592784629:web:657dbae0c549e9efe413bc"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
