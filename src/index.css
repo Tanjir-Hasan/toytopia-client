@@ -11,9 +11,21 @@
 }
 
 .active {
-    @apply text-[#f2727d] bg-[#fef0e7] font-bold mr-4 underline underline-offset-8;
+    @apply text-[#f2727d] bg-[#fef0e7] font-bold mr-4 underline underline-offset-8 w-full;
 }
 
 .default {
-    @apply text-[#4a2d4c] mr-4 no-underline;
+    @apply text-[#4a2d4c] mr-4 no-underline w-full;
+}
+
+.decorationh1 {
+    @apply text-4xl text-[#4a2d4c] font-extrabold hover:text-[#f2727d];
+}
+
+.decorationp {
+    @apply text-xl font-thin font-mono;
+}
+
+.decorationimg {
+    @apply h-64 rounded-3xl relative -top-24 left-16 shadow-lg;
 }
