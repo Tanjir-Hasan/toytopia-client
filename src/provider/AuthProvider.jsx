@@ -35,7 +35,7 @@ const AuthProvider = ({ children }) => {
     // user update
 
     const userUpdate = (displayName, photoURL) => {
-        return updateProfile(auth.currentUser, { photoURL, displayName });
+        return updateProfile(auth.currentUser, { displayName, photoURL });
     };
 
     // google

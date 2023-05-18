@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 .btn-footer {
-    @apply inline-flex justify-evenly font-medium items-center h-10 px-5 text-[#4a2d4c] transition-colors duration-150 bg-white rounded-full hover:bg-[#4a2d4c] hover:text-white w-full;
+    @apply inline-flex justify-evenly font-medium items-center h-10 px-5 text-[#4a2d4c] transition-colors duration-150 bg-white rounded-full hover:bg-[#4a2d4c] hover:text-white w-full gap-2;
+}
+
+.main-btn {
+    @apply inline-block bg-[#4a2d4c] hover:bg-[#f2727d] text-white font-semibold py-2 px-16 rounded-full text-base leading-8 tracking-normal;
+}
+
+.active {
+    @apply text-[#f2727d] bg-[#fef0e7] font-bold mr-4 underline underline-offset-8;
+}
+
+.default {
+    @apply text-[#4a2d4c] mr-4 no-underline;
 }

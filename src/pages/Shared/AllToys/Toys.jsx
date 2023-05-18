@@ -1,7 +1,7 @@
 
 const Toys = ({item}) => {
 
-    const {_id, name} = item;
+    const {_id, name, email} = item;
 
     return (
         <tr>
@@ -24,9 +24,7 @@ const Toys = ({item}) => {
                 </div>
             </td>
             <td>
-                Zemlak, Daniel and Leannon
-                <br />
-                <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                {email}
             </td>
             <td>{name}</td>
             <th>

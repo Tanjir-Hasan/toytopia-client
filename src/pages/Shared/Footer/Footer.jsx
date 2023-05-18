@@ -27,7 +27,7 @@ const Footer = () => {
                     <h3 className='text-2xl font-bold mt-4'>Contact Us</h3>
                     <button className='btn-footer'>
                         <BsFillTelephoneFill />
-                        <span>0000-123-456789</span>
+                        <span>0000 - 123 - 456789</span>
                     </button>
                     <button className='btn-footer'>
                         <AiFillMail />

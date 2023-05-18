@@ -9,7 +9,7 @@ const MyToys = () => {
 
     const [allData, setAllData] = useState([]);
 
-    const url = `http://localhost:5000/allToys?email=${user?.email}`
+    const url = `http://localhost:5000/userToys?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url, {
