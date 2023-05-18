@@ -2,8 +2,8 @@
 const Decoration = () => {
     return (
         <div className="space-y-8 w-11/12 mx-auto my-16">
-            <h1 className="text-7xl text-[#4a2d4c] font-extrabold text-center">We Decorate</h1>
-            <p className="text-3xl text-[#4a2d4c] font-serif font-thin text-center">- Let us decorate your kids room -</p>
+            <h1 className="text-7xl text-[#4a2d4c] font-extrabold text-center" data-aos="zoom-in-down">We Decorate</h1>
+            <p className="text-3xl text-[#4a2d4c] font-serif font-thin text-center" data-aos="zoom-in-down">- Let us decorate your kids room -</p>
 
             {/*  */}
 
