@@ -14,6 +14,7 @@ import Blog from './pages/Blog/Blog';
 import AuthProvider from './provider/AuthProvider';
 import MyToys from './pages/Shared/MyToys/MyToys';
 import AddAToy from './pages/Shared/AddAToy/AddAToy';
+import AllToys from './pages/Shared/AllToys/AllToys';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "alltoys",
+        element: <AllToys></AllToys>
       },
       {
         path: "login",
