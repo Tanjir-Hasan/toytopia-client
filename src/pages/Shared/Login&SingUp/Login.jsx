@@ -3,12 +3,15 @@ import { AuthContext } from "../../../provider/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
 import { FcGoogle } from 'react-icons/fc';
+import useTitle from "../../../hooks/useTitle";
 
 const Login = () => {
 
     const { signUser, googleAuthProvider, auth, userUpdate } = useContext(AuthContext);
 
     const [error, setError] = useState('');
+
+    useTitle('Login');
 
     const navigate = useNavigate();
 

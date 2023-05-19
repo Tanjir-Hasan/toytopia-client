@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
+import useTitle from "../../../hooks/useTitle";
 
 const SignUp = () => {
 
@@ -8,6 +9,8 @@ const SignUp = () => {
 
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
+
+    useTitle('Sign up');
 
     const navigate = useNavigate();
 

@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import MyToy from "./MyToy";
 import { AuthContext } from "../../../provider/AuthProvider";
 import Swal from "sweetalert2";
+import useTitle from "../../../hooks/useTitle";
 
 
 const MyToys = () => {
@@ -9,6 +10,8 @@ const MyToys = () => {
     const { user } = useContext(AuthContext);
 
     const [allData, setAllData] = useState([]);
+
+    useTitle('My toys');
 
     const url = `http://localhost:5000/userToys?email=${user?.email}`;
 

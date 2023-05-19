@@ -1,21 +1,21 @@
 import Marquee from "react-fast-marquee";
 import Lottie from "lottie-react";
-import car1 from "../../../../public/animations/141346-cars.json";
-import car2 from "../../../../public/animations/14716-coupe-car-loop.json";
-import car3 from "../../../../public/animations/14717-sedan-car-animation.json";
-import car4 from "../../../../public/animations/17413-relax-and-chill.json";
-import car5 from "../../../../public/animations/27631-blue-car.json";
-import car7 from "../../../../public/animations/4526-load.json";
-import car8 from "../../../../public/animations/68832-shop-car.json";
-import car9 from "../../../../public/animations/71204-cars.json";
-import car10 from "../../../../public/animations/72049-red-car.json";
-import car11 from "../../../../public/animations/76051-red-car.json";
-import car12 from "../../../../public/animations/82822-a-car.json";
-import car13 from "../../../../public/animations/83673-vehicles.json";
-import car14 from "../../../../public/animations/92257-car-on-a-road.json";
-import car15 from "../../../../public/animations/93387-car-insurance-offers-loading-page.json";
-import car16 from "../../../../public/animations/99207-moving-car.json";
-import car17 from "../../../../public/animations/85846-carr.json";
+import car1 from "../../../animations/141346-cars.json";
+import car2 from "../../../animations/14716-coupe-car-loop.json";
+import car3 from "../../../animations/14717-sedan-car-animation.json";
+import car4 from "../../../animations/17413-relax-and-chill.json";
+import car5 from "../../../animations/27631-blue-car.json";
+import car7 from "../../../animations/4526-load.json";
+import car8 from "../../../animations/68832-shop-car.json";
+import car9 from "../../../animations/71204-cars.json";
+import car10 from "../../../animations/72049-red-car.json";
+import car11 from "../../../animations/76051-red-car.json";
+import car12 from "../../../animations/82822-a-car.json";
+import car13 from "../../../animations/83673-vehicles.json";
+import car14 from "../../../animations/92257-car-on-a-road.json";
+import car15 from "../../../animations/93387-car-insurance-offers-loading-page.json";
+import car16 from "../../../animations/99207-moving-car.json";
+import car17 from "../../../animations/85846-carr.json";
 
 const Gallery = () => {
     return (

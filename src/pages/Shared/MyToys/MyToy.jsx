@@ -1,3 +1,4 @@
+import { BsFillTrashFill } from 'react-icons/bs';
 
 const MyToy = ({ item, handleDelete, handleUpdate }) => {
     const { _id, name, email } = item;
@@ -5,7 +6,9 @@ const MyToy = ({ item, handleDelete, handleUpdate }) => {
         <tr>
             <th>
                 <label>
-                    <button onClick={() => handleDelete(_id)}>delete</button>
+                    <button onClick={() => handleDelete(_id)}>
+                        <BsFillTrashFill className='text-[#4a2d4c] hover:text-[#f2727d]' size={"2rem"} />
+                    </button>
                 </label>
             </th>
             <td>

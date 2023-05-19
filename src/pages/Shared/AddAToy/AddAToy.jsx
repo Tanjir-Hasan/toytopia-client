@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../../provider/AuthProvider";
 import Swal from "sweetalert2";
+import useTitle from "../../../hooks/useTitle";
 
 const AddAToy = () => {
 
@@ -12,6 +13,8 @@ const AddAToy = () => {
     const { user } = useContext(AuthContext);
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+
+    useTitle('Add toy');
 
     const onSubmit = (data) => {
 
