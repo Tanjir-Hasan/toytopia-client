@@ -1,4 +1,5 @@
 import { BsFillTrashFill } from 'react-icons/bs';
+import { RxUpdate } from 'react-icons/rx';
 
 const MyToy = ({ item, handleDelete, handleUpdate }) => {
     const { _id, name, email } = item;
@@ -7,29 +8,19 @@ const MyToy = ({ item, handleDelete, handleUpdate }) => {
             <th>
                 <label>
                     <button onClick={() => handleDelete(_id)}>
-                        <BsFillTrashFill className='text-[#4a2d4c] hover:text-[#f2727d]' size={"2rem"} />
+                        <BsFillTrashFill className='text-[#4a2d4c] hover:text-[#f2727d]' size={"1.5rem"} />
                     </button>
                 </label>
             </th>
-            <td>
-                <div className="flex items-center space-x-3">
-                    <div className="avatar">
-                        <div className="mask mask-squircle w-12 h-12">
-                            {/* <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" /> */}
-                        </div>
-                    </div>
-                    <div>
-                        <div className="font-bold">{_id}</div>
-                        <div className="text-sm opacity-50">United States</div>
-                    </div>
-                </div>
-            </td>
-            <td>
-                {email}
-            </td>
+            <td>{email}</td>
+            <td>{name}</td>
             <td>{name}</td>
             <th>
-                <button onClick={() => handleUpdate(_id)} className="btn btn-ghost btn-xs">update</button>
+                <label>
+                    <button onClick={() => handleUpdate(_id)}>
+                        <RxUpdate className='text-[#4a2d4c] hover:text-[#f2727d]' size={"1.5rem"} />
+                    </button>
+                </label>
             </th>
         </tr>
     );

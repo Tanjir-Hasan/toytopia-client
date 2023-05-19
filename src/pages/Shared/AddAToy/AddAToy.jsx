@@ -28,7 +28,7 @@ const AddAToy = () => {
                 console.log(data);
                 if (data.insertedId) {
                     Swal.fire({
-                        title: 'New Product Added',
+                        title: 'You Have Added A New Toy',
                         showClass: {
                             popup: 'animate__animated animate__fadeInDown'
                         },

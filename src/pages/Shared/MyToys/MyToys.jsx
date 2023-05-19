@@ -70,15 +70,11 @@ const MyToys = () => {
                 {/* head */}
                 <thead>
                     <tr>
-                        <th>
-                            <label>
-                                <input type="checkbox" className="checkbox" />
-                            </label>
-                        </th>
+                        <th>Remove</th>
                         <th>Name</th>
                         <th>Job</th>
                         <th>Favorite Color</th>
-                        <th></th>
+                        <th>Update</th>
                     </tr>
                 </thead>
                 <tbody>
