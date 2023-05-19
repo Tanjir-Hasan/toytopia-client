@@ -2,7 +2,7 @@ import { BsFillTrashFill } from 'react-icons/bs';
 import { RxUpdate } from 'react-icons/rx';
 
 const MyToy = ({ item, handleDelete, handleUpdate }) => {
-    const { _id, name, email, price, photoUrl, quantity, rating } = item;
+    const { _id, name, price, photoUrl, quantity, rating } = item;
 
     return (
         <>
@@ -15,7 +15,7 @@ const MyToy = ({ item, handleDelete, handleUpdate }) => {
                     </label>
                 </th>
                 <td>{name}</td>
-                <td><img src={photoUrl} className='h-16 rounded-2xl' alt="" /></td>
+                <td><img src={photoUrl} className='w-1/2 h-20 rounded-2xl' alt="" /></td>
                 <td>{price}</td>
                 <td>{rating}</td>
                 <td>{quantity}</td>

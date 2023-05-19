@@ -17,7 +17,7 @@ const Car = () => {
             <div className="mx-auto px-4 py-8 max-w-xl">
                 <div className="bg-white shadow-2xl rounded-lg mb-6 tracking-wide" >
                     <div className="md:flex-shrink-0">
-                        <img src={photoUrl} alt="" className="w-full h-64 rounded-lg rounded-b-none" />
+                        <img src={photoUrl} alt="" className="w-full h-72 rounded-lg rounded-b-none" />
                     </div>
                     <div className="px-4 py-2 mt-2">
                         <h2 className="font-bold text-2xl text-[#4a2d4c] hover:text-[#f2727d] tracking-normal">{name}</h2>
