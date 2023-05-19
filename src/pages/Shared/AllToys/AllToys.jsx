@@ -10,7 +10,7 @@ const AllToys = () => {
     useTitle('All Toys');
 
     useEffect(() => {
-        fetch('http://localhost:5000/allToys')
+        fetch('https://toytopia-server-nine.vercel.app/allToys')
             .then(res => res.json())
             .then(data => setAllData(data.slice(0, itemsPerPage)));
     }, [itemsPerPage]);
@@ -22,7 +22,7 @@ const AllToys = () => {
     };
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/getToysByText/${search}`)
+        fetch(`https://toytopia-server-nine.vercel.app/getToysByText/${search}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);

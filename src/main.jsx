@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "alltoys/:id",
         element: <PrivateRoutes><Car></Car></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
+        loader: ({ params }) => fetch(`https://toytopia-server-nine.vercel.app/allToys/${params.id}`)
       },
       {
         path: "login",

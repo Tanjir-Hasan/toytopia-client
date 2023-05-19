@@ -18,7 +18,7 @@ const AddAToy = () => {
 
     const onSubmit = (data) => {
 
-        fetch('http://localhost:5000/allToys', {
+        fetch('https://toytopia-server-nine.vercel.app/allToys', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

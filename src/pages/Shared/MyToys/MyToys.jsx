@@ -13,7 +13,7 @@ const MyToys = () => {
 
     useTitle('My toys');
 
-    const url = `http://localhost:5000/userToys?email=${user?.email}&sortBy=desc`;
+    const url = `https://toytopia-server-nine.vercel.app/userToys?email=${user?.email}&sortBy=desc`;
 
     useEffect(() => {
 
@@ -39,7 +39,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/userToys/${_id}`, {
+                fetch(`https://toytopia-server-nine.vercel.app/userToys/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
