@@ -13,18 +13,19 @@ const MyToys = () => {
 
     useTitle('My toys');
 
-    const url = `http://localhost:5000/userToys?email=${user?.email}`;
+    const url = `http://localhost:5000/userToys?email=${user?.email}&sortBy=asc`;
 
     useEffect(() => {
+
         fetch(url, {
             method: 'GET',
             headers: { 'content-type': 'application/json' },
         })
             .then(res => res.json())
             .then(data => {
-                setAllData(data)
-            })
-    }, [url])
+                setAllData(data);
+            });
+    }, [url]);
 
     const handleDelete = _id => {
         console.log(_id);
@@ -58,7 +59,7 @@ const MyToys = () => {
             }
         });
     };
-    
+
 
     const handleUpdate = _id => {
         console.log(_id)
@@ -66,6 +67,7 @@ const MyToys = () => {
 
     return (
         <div className="overflow-x-auto w-full">
+
             <table className="table w-full">
                 {/* head */}
                 <thead>
