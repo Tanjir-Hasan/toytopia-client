@@ -7,12 +7,7 @@ const Decoration = () => {
 
             {/*  */}
 
-            
-
-
-
-
-            <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
+            {/* <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
                 
                 <div className="flex w-1/2" style={{height: "635px"}}>
                     <img src="https://i.ibb.co/QbnMHC1/Whimsical-Wonderland1.jpg" className="decorationimg" style={{ boxShadow: "10px 10px #4a2d4c"}} alt="" />
@@ -55,7 +50,7 @@ const Decoration = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </div>
 
     );
