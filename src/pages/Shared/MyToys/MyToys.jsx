@@ -13,7 +13,7 @@ const MyToys = () => {
 
     useTitle('My toys');
 
-    const url = `http://localhost:5000/userToys?email=${user?.email}&sortBy=asc`;
+    const url = `http://localhost:5000/userToys?email=${user?.email}&sortBy=desc`;
 
     useEffect(() => {
 
@@ -74,8 +74,10 @@ const MyToys = () => {
                     <tr>
                         <th>Remove</th>
                         <th>Name</th>
-                        <th>Job</th>
-                        <th>Favorite Color</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Ratings</th>
+                        <th>Qty</th>
                         <th>Update</th>
                     </tr>
                 </thead>

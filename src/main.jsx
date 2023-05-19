@@ -18,6 +18,7 @@ import AllToys from './pages/Shared/AllToys/AllToys';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import PrivateRoutes from './routes/PrivateRoutes';
 import Car from './pages/Cars/Car';
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +66,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
+      <ToastContainer />
       <RouterProvider router={router} />
     </AuthProvider>
   </React.StrictMode>,
