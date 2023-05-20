@@ -17,8 +17,9 @@ import AddAToy from './pages/Shared/AddAToy/AddAToy';
 import AllToys from './pages/Shared/AllToys/AllToys';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import PrivateRoutes from './routes/PrivateRoutes';
-import Car from './pages/Cars/Car';
+import Car from './pages/Car/Car';
 import { ToastContainer } from 'react-toastify';
+import UpdateAToy from './pages/UpdateAToy/UpdateAToy';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
         path: "alltoys/:id",
         element: <PrivateRoutes><Car></Car></PrivateRoutes>,
         loader: ({ params }) => fetch(`https://toytopia-server-nine.vercel.app/allToys/${params.id}`)
+      },
+      {
+        path: "update/:id",
+        element: <UpdateAToy></UpdateAToy>,
+        loader: ({ params }) => fetch(`https://toytopia-server-nine.vercel.app/userToys/${params.id}`)
       },
       {
         path: "login",

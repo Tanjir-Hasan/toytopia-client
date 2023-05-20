@@ -14,7 +14,7 @@ const Toys = ({ item, index }) => {
             <td>{quantity}</td>
             <td>
                 <Link to={`/allToys/${_id}`}>
-                    <button className="btn btn-ghost">details</button>
+                    <button className="btn btn-ghost">Details</button>
                 </Link>
             </td>
         </tr>

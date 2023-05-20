@@ -62,7 +62,7 @@ const Navbar = () => {
                         <div className="tooltip text-red" data-tip={user.displayName}>
                             <img src={user.photoURL} alt="" className="text-red h-14 rounded-full" />
                         </div>
-                        <button onClick={handleLogOut} className="inline-block bg-[#4a2d4c] hover:bg-[#f2727d] text-white font-semibold py-2 px-8 ml-4 rounded-full text-base leading-8 tracking-normal">Log out</button>
+                        <button onClick={handleLogOut} className="inline-block bg-[#4a2d4c] hover:bg-[#f08080] text-white font-semibold py-2 px-8 ml-4 rounded-full text-base leading-8 tracking-normal">Log out</button>
                     </>
                 ) : (
                     <Link to="/login" className="main-btn">Login</Link>

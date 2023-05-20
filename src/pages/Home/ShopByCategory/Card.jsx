@@ -30,7 +30,7 @@ const Card = ({ item }) => {
 
       <div className="p-4 space-y-4 mt-4">
       <h2 className="font-bold text-3xl text-center text-[#4a2d4c] tracking-normal">{name}</h2>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <p className="font-bold text-rose-600">$ {price}</p>
           <div className="flex items-center justify-end gap-1 mt-2">
             <AiFillStar className="text-rose-600" />

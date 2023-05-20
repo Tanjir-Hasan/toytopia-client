@@ -1,7 +1,8 @@
 import { BsFillTrashFill } from 'react-icons/bs';
 import { RxUpdate } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
 
-const MyToy = ({ item, handleDelete, handleUpdate }) => {
+const MyToy = ({ item, handleDelete }) => {
     const { _id, name, price, photoUrl, quantity, rating } = item;
 
     return (
@@ -21,9 +22,11 @@ const MyToy = ({ item, handleDelete, handleUpdate }) => {
                 <td>{quantity}</td>
                 <th className=''>
                     <label>
-                        <button onClick={() => handleUpdate(_id)}>
+                        <Link to={`/update/${_id}`}>
                             <RxUpdate className='text-[#4a2d4c] hover:text-[#f2727d]' size={"1.5rem"} />
-                        </button>
+                            {/* <button onClick={() => handleUpdate(_id)}>
+                            </button> */}
+                        </Link>
                     </label>
                 </th>
             </tr>

@@ -13,7 +13,7 @@ const MyToys = () => {
 
     useTitle('My toys');
 
-    const url = `https://toytopia-server-nine.vercel.app/userToys?email=${user?.email}&sortBy=desc`;
+    const url = `https://toytopia-server-nine.vercel.app/userToys?email=${user?.email}&sortBy=asc`;
 
     useEffect(() => {
 
@@ -61,10 +61,6 @@ const MyToys = () => {
     };
 
 
-    const handleUpdate = _id => {
-        console.log(_id)
-    }
-
     return (
         <div className="overflow-x-auto w-full">
 
@@ -87,7 +83,6 @@ const MyToys = () => {
                             item={item}
                             key={item._id}
                             handleDelete={handleDelete}
-                            handleUpdate={handleUpdate}
                         >
 
                         </MyToy>)
