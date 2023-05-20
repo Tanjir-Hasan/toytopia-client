@@ -22,11 +22,11 @@ const AllToys = () => {
     };
 
     const handleSearch = () => {
-        fetch(`https://toytopia-server-nine.vercel.app/getToysByText/${search}`)
+        fetch(`https://toytopia-server-nine.vercel.app/allToys/searchByName/${search}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                setAllData(data);
+                setAllData(data.slice(0, itemsPerPage));
             });
     };
 

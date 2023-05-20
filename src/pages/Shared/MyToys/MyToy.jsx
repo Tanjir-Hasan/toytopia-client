@@ -24,8 +24,6 @@ const MyToy = ({ item, handleDelete }) => {
                     <label>
                         <Link to={`/update/${_id}`}>
                             <RxUpdate className='text-[#4a2d4c] hover:text-[#f2727d]' size={"1.5rem"} />
-                            {/* <button onClick={() => handleUpdate(_id)}>
-                            </button> */}
                         </Link>
                     </label>
                 </th>

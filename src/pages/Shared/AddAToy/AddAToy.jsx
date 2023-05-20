@@ -6,10 +6,6 @@ import useTitle from "../../../hooks/useTitle";
 
 const AddAToy = () => {
 
-
-    // const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    // const onSubmit = data => console.log(data);
-
     const { user } = useContext(AuthContext);
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -39,8 +35,6 @@ const AddAToy = () => {
                     reset();
                 }
             })
-
-        console.log(data);
     };
 
     return (

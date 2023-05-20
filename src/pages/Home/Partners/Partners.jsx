@@ -2,8 +2,8 @@
 const Partners = () => {
     return (
         <div className="space-y-8 w-11/12 mx-auto my-16">
-            <h1 className="text-7xl text-[#4a2d4c] font-extrabold text-center" data-aos="zoom-in-left">Our Partners</h1>
-            <p className="text-3xl text-[#4a2d4c] font-serif font-thin text-center" data-aos="zoom-in-left">- The best products -</p>
+            <h1 className="text-7xl text-[#4a2d4c] font-extrabold text-center">Our Partners</h1>
+            <p className="text-3xl text-[#4a2d4c] font-serif font-thin text-center">The best products</p>
             <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 text-[#f2727d] text-center font-serif font-semibold">
                 <span>
                     <img src="https://i.ibb.co/ysb3L8f/abc-toys.png" className="h-44 rounded-full mb-3" alt="" />

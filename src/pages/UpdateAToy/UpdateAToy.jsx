@@ -1,15 +1,12 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-// import { AuthContext } from '../../provider/AuthProvider';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const UpdateAToy = () => {
 
-    // const { user } = useContext(AuthContext);
-
     const toyData = useLoaderData();
-    console.log(toyData)
+
     const { _id, email, name, sellerName, category, description, price, quantity, photoUrl, rating } = toyData;
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -37,8 +34,6 @@ const UpdateAToy = () => {
                     reset();
                 }
             })
-
-        console.log(data);
     };
 
     return (
@@ -48,7 +43,7 @@ const UpdateAToy = () => {
                 <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
                     <div className="max-w-md mx-auto">
                         <div className="mx-auto">
-                            <h1 className="text-3xl font-semibold px-20">- - - - {name} - - - -</h1>
+                            <h1 className="text-3xl font-semibold px-20">- - - {name} - - -</h1>
                         </div>
                         <div className="divide-y divide-gray-200">
                             <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"></div>

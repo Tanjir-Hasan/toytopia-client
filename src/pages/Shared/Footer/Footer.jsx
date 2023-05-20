@@ -9,7 +9,10 @@ const Footer = () => {
         <div className="text-[#4a2d4c] bg-[#fef0e7] lg:px-32 px-16 py-16">
             <div className='lg:flex justify-between'>
                 <div className='space-y-3'>
-                    <h3 className='text-4xl font-extrabold mt-4 '>TOYTOPIA</h3>
+                    <div className="inline-flex items-center">
+                        <img src="https://i.ibb.co/tLBkYvM/tkthao219-bubududu.gif" className="h-8" alt="" />
+                        <h3 className='text-4xl font-extrabold mt-4 '>TOYTOPIA</h3>
+                    </div>
                     <p className='font-medium font-mono'>Toytopia is a destination <br /> toy shop with an extensive <br /> collection of toys and games <br /> for kids of all ages.</p>
                 </div>
                 <div className='space-y-3'>

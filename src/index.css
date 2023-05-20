@@ -25,7 +25,3 @@
 .decorationp {
     @apply text-xl font-thin font-mono;
 }
-
-.decorationimg {
-    @apply h-64 rounded-3xl;
-}

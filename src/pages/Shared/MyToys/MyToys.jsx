@@ -39,7 +39,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://toytopia-server-nine.vercel.app/userToys/${_id}`, {
+                fetch(`https://toytopia-server-nine.vercel.app/deleteToys/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

@@ -39,7 +39,6 @@ const SignUp = () => {
         createUser(email, password)
             .then(result => {
                 const createUser = result.user;
-                console.log(createUser)
                 userUpdate(name, photo);
                 createUser.displayName = name;
                 createUser.photoURL = photo;
@@ -49,26 +48,12 @@ const SignUp = () => {
                 navigate(from, { replace: true });
             })
             .catch(error => {
-                console.log(error.message);
                 setError(error.message);
             })
     }
 
     return (
         <div>
-            {/* <p>{error}</p>
-            <p>{success}</p>
-            <form onSubmit={handleSignUp}>
-                <input className="bg-slate-400" type="text" name="name" placeholder="Full Name" id="" required />
-                <input className="bg-slate-400" type="email" name="email" placeholder="Email" id="" required />
-                <input className="bg-slate-400" type="url" name="photo" placeholder="" id="Photo URL" required />
-                <input className="bg-slate-400" type="password" name="password" placeholder="Password" id="" required />
-                <input className="bg-slate-400" type="submit" value="Sign Up" />
-            </form> */}
-
-
-            {/*  */}
-
             <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
                 <div className="relative py-3 sm:max-w-xl sm:mx-auto">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#f2727d] to-[#4a2d4c] shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>

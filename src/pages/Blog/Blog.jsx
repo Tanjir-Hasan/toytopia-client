@@ -13,9 +13,9 @@ const Blog = () => {
             <h3 className="text-2xl text-[#660708] font-medium">Question: What is an access token and refresh token? How do they work and where should we store them on the client-side?</h3>
             <h4 className="text-2xl font-medium text-[#0f8b8d] underline underline-offset-4">Answer:</h4>
             <p className="ml-3 mt-2 pb-10">
-                The access token is re-issued, provided the refresh token is a valid one requesting permission to access confidential resources. A refresh token just helps you re-validate a user without them having to re-enter their login credentials multiple times.
+                The access token is re-issued, provided the refresh token is a valid one requesting permission to access confidential resources. A refresh token just helps us re-validate a user without them having to re-enter their login credentials multiple times.
                 <br /> <br />
-                The client includes the access token in each request to the server that hosts the protected resources. The server then verifies the access token to determine if the client is authorized to access the requested resource. If the access token is valid and has not expired, the server fulfills the request. When the access token expires, the client sends the refresh token to a token endpoint (usually provided by the authentication server). The token endpoint verifies the refresh token and, if valid, issues a new access token and optionally a new refresh token. This process allows the client to continue accessing protected resources without requiring the user to re-authenticate.
+                The client includes the access token in each request to the server that hosts the protected resources. The server then verifies the access token to determine if the client is authorized to access the requested resource. If the access token is valid and has not expired, the server fulfills the request. When the access token expires, the client sends the refresh token to a token endpoint. The token endpoint verifies the refresh token and, if valid, issues a new access token and optionally a new refresh token.
                 <br /> <br />
                 The access token needs to be sent with each request to the server that requires authentication. It is typically stored in memory or as a secure HTTP-only cookie. Storing it in memory is suitable for single-page applications (SPAs) where JavaScript handles API requests. For server-side applications, the access token can be stored in a session or a secure session-like storage mechanism. The refresh token should be stored securely and is usually persisted on the client-side, such as in a secure HTTP-only cookie or local storage. The choice depends on the security requirements and the client application's architecture. It's essential to protect the refresh token against cross-site scripting (XSS) attacks and other security vulnerabilities.
             </p>
@@ -36,7 +36,7 @@ const Blog = () => {
             </p>
 
             {/* q3 */}
-            <h3 className="text-2xl text-[#660708] font-medium">Question: </h3>
+            <h3 className="text-2xl text-[#660708] font-medium">Question: What is express js? What is Nest JS?</h3>
             <h4 className="text-2xl font-medium text-[#0f8b8d] underline underline-offset-4">Answer:</h4>
             <p className="ml-3 mt-2 pb-10">
                 Express.js is a web framework for Node.js which is designed for building web applications and APIs and has been called the de facto standard server framework for Node.js.
@@ -45,7 +45,7 @@ const Blog = () => {
             </p>
 
             {/* q4 */}
-            <h3 className="text-2xl text-[#660708] font-medium">Question: </h3>
+            <h3 className="text-2xl text-[#660708] font-medium">Question: What is MongoDB aggregate and how does it work?</h3>
             <h4 className="text-2xl font-medium text-[#0f8b8d] underline underline-offset-4">Answer:</h4>
             <p className="ml-3 mt-2 pb-10">
                 One of the most common use cases of Aggregation is to calculate aggregate values for groups of documents. Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.
