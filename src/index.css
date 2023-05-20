@@ -18,7 +18,7 @@
     @apply text-[#4a2d4c] mr-4 no-underline w-full;
 }
 
-.decorationh1 {
+.decorationh3 {
     @apply text-4xl text-[#4a2d4c] font-extrabold hover:text-[#f2727d];
 }
 
@@ -27,5 +27,5 @@
 }
 
 .decorationimg {
-    @apply h-64 rounded-3xl relative -top-24 left-16 shadow-lg;
+    @apply h-64 rounded-3xl;
 }

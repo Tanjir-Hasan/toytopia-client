@@ -6,52 +6,32 @@ const Decoration = () => {
             <p className="text-3xl text-[#4a2d4c] font-serif font-thin text-center" data-aos="zoom-in-down">- Let us decorate your kids room -</p>
 
             {/*  */}
-
-            {/* <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
-                
-                <div className="flex w-1/2" style={{height: "635px"}}>
-                    <img src="https://i.ibb.co/QbnMHC1/Whimsical-Wonderland1.jpg" className="decorationimg" style={{ boxShadow: "10px 10px #4a2d4c"}} alt="" />
-                    <div className="bg-[#fef0e7] max-h-96 pl-24 pr-3 py-16 rounded-3xl space-y-4">
-                        <h3 className="decorationh1">Whimsical Wonderland</h3>
-                        <p className="decorationp">Transform your child's room into a magical world with enchanting decorations and playful accessories.</p>
-                    </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div data-aos="zoom-in" className='border border-slate-200 p-10' style={{ backgroundImage: "linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% )" }}>
+                    <img src="https://i.ibb.co/QbnMHC1/Whimsical-Wonderland1.jpg" alt="" className='w-auto h-64 mb-3 mx-auto rounded-lg' />
+                    <h3 className="decorationh3">Whimsical Wonderland</h3>
+                    <p className="decorationp">Transform your child's room into a magical world with enchanting decorations and playful accessories.</p>
                 </div>
 
+
+                <div data-aos="zoom-in" className='border border-slate-200 p-10' style={{ backgroundImage: "linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% )" }}>
+                    <img src="https://i.ibb.co/kQCDHRQ/Cosmic-Dreamscape1.jpg" alt="" className='w-auto h-64 mb-3 mx-auto rounded-lg' />
+                    <h3 className="decorationh3">Cosmic Dreamscape</h3>
+                    <p className="decorationp">Ignite your child's imagination with a space-themed room featuring glow-in-the-dark stars and intergalactic accents.</p>
+                </div>
+
+                <div data-aos="zoom-in" className='border border-slate-200 p-10' style={{ backgroundImage: "linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% )" }}>
+                    <img src="https://i.ibb.co/dt2m6VJ/Dreamy-Fairyland.png" alt="" className='w-auto h-64 mb-3 mx-auto rounded-lg' />
+                    <h3 className="decorationh3">Dreamy Fairyland</h3>
+                    <p className="decorationp">Immerse your little ones in a fairy tale realm with ethereal decor, twinkling lights, and whimsical touches.</p>
+                </div>
+
+                <div data-aos="zoom-in" className='border border-slate-200 p-10' style={{ backgroundImage: "linear-gradient( 92.7deg,  rgba(245,212,212,1) 8.5%, rgba(252,251,224,1) 90.2% )" }}>
+                    <img src="https://i.ibb.co/9Vbp6cS/Adventurous-Explorers.jpg" alt="" className='w-auto h-64 mb-3 mx-auto rounded-lg' />
+                    <h3 className="decorationh3">Adventurous Explorers</h3>
+                    <p className="decorationp">Create an inspiring space for young adventurers with nature-themed decor and interactive elements.</p>
+                </div>
             </div>
-            <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
-                
-                <div className="flex w-1/2" style={{height: "635px"}}>
-                    <img src="https://i.ibb.co/kQCDHRQ/Cosmic-Dreamscape1.jpg" className="decorationimg" style={{ boxShadow: "10px 10px #4a2d4c"}} alt="" />
-                    <div className="bg-[#fef0e7] max-h-96 pl-24 pr-3 py-16 rounded-3xl space-y-4">
-                        <h3 className="decorationh1">Cosmic Dreamscape</h3>
-                        <p className="decorationp">Ignite your child's imagination with a space-themed room featuring glow-in-the-dark stars and intergalactic accents.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
-                
-                <div className="flex w-1/2" style={{height: "635px"}}>
-                    <img src="https://i.ibb.co/dt2m6VJ/Dreamy-Fairyland.png" className="decorationimg" style={{ boxShadow: "10px 10px #4a2d4c"}} alt="" />
-                    <div className="bg-[#fef0e7] max-h-96 pl-24 pr-3 py-16 rounded-3xl space-y-4">
-                        <h3 className="decorationh1">Dreamy Fairyland</h3>
-                        <p className="decorationp">Immerse your little ones in a fairy tale realm with ethereal decor, twinkling lights, and whimsical touches.</p>
-                    </div>
-                </div>
-
-            </div>
-            <div className="lg:flex justify-between gap-5 mb-10 max-h-96">
-                
-                <div className="flex w-1/2" style={{height: "635px"}}>
-                    <img src="https://i.ibb.co/9Vbp6cS/Adventurous-Explorers.jpg" className="decorationimg" style={{ boxShadow: "10px 10px #4a2d4c"}} alt="" />
-                    <div className="bg-[#fef0e7] max-h-96 pl-24 pr-3 py-16 rounded-3xl space-y-4">
-                        <h3 className="decorationh1">Adventurous Explorers</h3>
-                        <p className="decorationp">Create an inspiring space for young adventurers with nature-themed decor and interactive elements.</p>
-                    </div>
-                </div>
-
-            </div> */}
-
         </div>
 
     );
