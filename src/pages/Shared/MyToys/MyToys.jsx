@@ -50,7 +50,7 @@ const MyToys = () => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your file has been deleted.',
+                                'The Toy has been deleted.',
                                 'success'
                             ).then(() => {
                                 const remaining = allData.filter(item => item._id !== _id);

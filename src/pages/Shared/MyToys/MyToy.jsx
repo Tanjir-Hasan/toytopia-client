@@ -17,7 +17,7 @@ const MyToy = ({ item, handleDelete }) => {
                 </th>
                 <td>{name}</td>
                 <td><img src={photoUrl} className='w-1/2 h-20 rounded-2xl' alt="" /></td>
-                <td>{price}</td>
+                <td>$ {price}</td>
                 <td>{rating}</td>
                 <td>{quantity}</td>
                 <th className=''>
