@@ -11,9 +11,11 @@ const MyToys = () => {
 
     const [allData, setAllData] = useState([]);
 
+    const [sortOrder, setSortOrder] = useState('asc');
+
     useTitle('My toys');
 
-    const url = `https://toytopia-server-nine.vercel.app/userToys?email=${user?.email}&sortBy=asc`;
+    const url = `https://toytopia-server-nine.vercel.app/userToys?email=${user?.email}&sortBy=${sortOrder}`;
 
     useEffect(() => {
 
@@ -60,38 +62,49 @@ const MyToys = () => {
         });
     };
 
+    const handleSortOrder = (order) => {
+        setSortOrder(order);
+    };
+
 
     return (
-        <div className="overflow-x-auto w-full">
+        <>
+            <div className="text-center my-6">
+                <button onClick={() => handleSortOrder('asc')}  className="bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-[#f08080] focus:text-[#f08080] py-2 px-4 border border-[#4a2d4c] hover:border-transparent rounded mr-2">Ascending</button>
+                <button onClick={() => handleSortOrder('desc')} className="bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-[#f08080] focus:text-[#f08080] py-2 px-4 border border-[#4a2d4c] hover:border-transparent rounded ml-2">Descending</button>
+            </div>
 
-            <table className="table w-full">
-                {/* head */}
-                <thead>
-                    <tr>
-                        <th>Remove</th>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th>Price</th>
-                        <th>Ratings</th>
-                        <th>Qty</th>
-                        <th>Update</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        allData.map(item => <MyToy
-                            item={item}
-                            key={item._id}
-                            handleDelete={handleDelete}
-                        >
+            <div className="overflow-x-auto w-full">
 
-                        </MyToy>)
-                    }
+                <table className="table w-full">
+                    {/* head */}
+                    <thead>
+                        <tr>
+                            <th>Remove</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Ratings</th>
+                            <th>Qty</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            allData.map(item => <MyToy
+                                item={item}
+                                key={item._id}
+                                handleDelete={handleDelete}
+                            >
 
-                </tbody>
+                            </MyToy>)
+                        }
 
-            </table>
-        </div>
+                    </tbody>
+
+                </table>
+            </div>
+        </>
     );
 };
 

@@ -35,9 +35,16 @@ const Navbar = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><ActiveLink to="/">Home</ActiveLink></li>
                         <li><ActiveLink to="/alltoys">All Toys</ActiveLink></li>
+                        {user ? (
+                            <>
+                                <li><ActiveLink to="/myToys">My Toys</ActiveLink></li>
+                                <li><ActiveLink to="/addAToy">Add a Toy</ActiveLink></li>
+                            </>
+                        ) : null}
                         <li><ActiveLink to="/blog">Blog</ActiveLink></li>
                     </ul>
                 </div>
+
                 <div className="inline-flex items-center">
                     <img src="https://i.ibb.co/tLBkYvM/tkthao219-bubududu.gif" className="h-8" alt="" />
                     <Link className="btn btn-ghost normal-case text-2xl text-[#4a2d4c] font-bold">Toytopia</Link>
@@ -69,7 +76,6 @@ const Navbar = () => {
                 )}
             </div>
         </div>
-
     );
 };
 

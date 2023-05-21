@@ -7,7 +7,7 @@
 }
 
 .main-btn {
-    @apply inline-block bg-[#4a2d4c] hover:bg-[#f2727d] text-white font-semibold py-2 px-16 rounded-full text-base leading-8 tracking-normal;
+    @apply inline-block bg-[#4a2d4c] hover:bg-[#f08080] text-white font-semibold py-2 px-16 rounded-full text-base leading-8 tracking-normal;
 }
 
 .active {
