@@ -7,9 +7,9 @@ const About = () => {
             <h1 className="lg:text-7xl text-3xl text-[#4a2d4c] font-extrabold text-center mb-16">About us</h1>
 
             <div className='lg:flex items-center gap-10'>
-                <img src="https://i.ibb.co/QJN9bpt/photo-1515281239448-2abe329fe5e5.jpg" alt="toys" className='lg:w-1/2 lg:pb-0 pb-3 hover:scale-110 duration-1000' />
+                <img data-aos="zoom-in-down" src="https://i.ibb.co/QJN9bpt/photo-1515281239448-2abe329fe5e5.jpg" alt="toys" className='lg:w-1/2 lg:pb-0 pb-3 hover:scale-110 duration-1000' />
 
-                <p className='font-light'>
+                <p data-aos="zoom-in-down" className='font-light'>
                     <span className='text-2xl text-[#4a2d4c] font-bold'>Welcome to Toytopia!</span>
                     <br /> <br />
                     At Toytopia, we have a deep love for toy cars and a passion for providing enthusiasts and collectors with an exceptional shopping experience. As a leading online destination for toy car enthusiasts, we take pride in offering a wide selection of high-quality toy cars that cater to both kids and adults alike.

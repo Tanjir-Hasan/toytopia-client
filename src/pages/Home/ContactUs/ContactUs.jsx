@@ -10,9 +10,9 @@ const ContactUs = () => {
             <h1 className="lg:text-7xl text-3xl text-[#4a2d4c] font-extrabold text-center mb-16">Contact us</h1>
 
             <div className='lg:flex flex-row-reverse items-center gap-10'>
-                <img src="https://i.ibb.co/71RN0pt/hong-lin-Ze-YQxq-EUn-WQ-unsplash-1.jpg" alt="toys" className='lg:w-1/2 lg:pb-0 pb-3 hover:scale-110 duration-1000' />
+                <img data-aos="zoom-in-left" src="https://i.ibb.co/71RN0pt/hong-lin-Ze-YQxq-EUn-WQ-unsplash-1.jpg" alt="toys" className='lg:w-1/2 lg:pb-0 pb-3 hover:scale-110 duration-1000' />
 
-                <div className='lg:w-1/2'>
+                <div data-aos="zoom-in-right" className='lg:w-1/2'>
 
                     <form>
                         {/* name */}
