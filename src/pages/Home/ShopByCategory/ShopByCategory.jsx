@@ -15,8 +15,8 @@ const ShopByCategory = () => {
 
     return (
         <div className='space-y-8'>
-            <h1 className="text-4xl lg:text-7xl text-[#4a2d4c] font-extrabold text-center">Toys Category</h1>
-            <p className="text-2xl lg:text-3xl text-[#4a2d4c] font-serif font-thin text-center">- Find Your Ride -</p>
+            <h1 className="lg:text-7xl text-3xl text-[#4a2d4c] font-extrabold text-center">Toys Category</h1>
+            <p className="text-xl lg:text-3xl text-[#4a2d4c] font-serif font-thin text-center">- Find Your Ride -</p>
             <div className="flex justify-center">
                 <div className="w-10/12 lg:w-11/12"> 
                     <Tabs>

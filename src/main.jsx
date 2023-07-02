@@ -20,6 +20,7 @@ import PrivateRoutes from './routes/PrivateRoutes';
 import Car from './pages/Car/Car';
 import { ToastContainer } from 'react-toastify';
 import UpdateAToy from './pages/UpdateAToy/UpdateAToy';
+import About from './pages/Shared/About/About';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog></Blog>
+      },
+      {
+        path: "about",
+        element: <About></About>
       }
     ]
   },

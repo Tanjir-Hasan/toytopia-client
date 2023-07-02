@@ -9,7 +9,7 @@ import car5 from "../../../assets/animations/27631-blue-car.json";
 const Gallery = () => {
     return (
         <div className="w-11/12 mx-auto my-14">
-            <h1  className="text-7xl text-[#4a2d4c] font-extrabold text-center mb-16">Toytopia Playland</h1>
+            <h1  className="lg:text-7xl text-3xl text-[#4a2d4c] font-extrabold text-center mb-16">Toytopia Playland</h1>
             <Marquee speed={100} pauseOnHover>
                 <Lottie animationData={car1} className="h-64 ml-4" loop={true} />
                 <Lottie animationData={car2} className="h-64 ml-4" loop={true} />
