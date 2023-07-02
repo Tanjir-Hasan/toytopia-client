@@ -36,7 +36,7 @@ const About = () => {
                 <br /><br />
                 Happy motoring!
                 <br />
-                Toytopia Team
+                Toytopia Team.
             </p>
         </div>
     );
