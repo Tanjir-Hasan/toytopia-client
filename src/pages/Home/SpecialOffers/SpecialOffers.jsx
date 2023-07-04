@@ -7,7 +7,7 @@ const SpecialOffers = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/discounted')
+        fetch('https://toytopia-server-nine.vercel.app/discounted')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])

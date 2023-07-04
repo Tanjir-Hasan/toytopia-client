@@ -46,7 +46,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="inline-flex items-center">
-                    <img src="https://i.ibb.co/tLBkYvM/tkthao219-bubududu.gif" className="h-8" alt="" />
+                    <img src="https://i.ibb.co/tLBkYvM/tkthao219-bubududu.gif" className="h-8 hidden sm:block" alt="" />
                     <Link className="btn btn-ghost normal-case text-2xl text-[#4a2d4c] font-bold">Toytopia</Link>
                 </div>
             </div>

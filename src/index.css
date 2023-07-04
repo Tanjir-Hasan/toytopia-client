@@ -25,3 +25,8 @@
 .decorationp {
     @apply text-xl font-thin font-mono;
 }
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}

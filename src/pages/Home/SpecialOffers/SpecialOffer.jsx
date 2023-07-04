@@ -7,7 +7,7 @@ const SpecialOffer = ({ item }) => {
     const [show, setShow] = useState(false);
 
     return (
-        <div className="mx-auto px-4 py-8 w-2/3">
+        <div className="mx-auto px-4 py-8 lg:w-2/3 hover:scale-110 duration-700">
             <div className="bg-white shadow-2xl rounded-lg mb-6 tracking-wide" >
                 <div className="md:flex-shrink-0">
                     <img src={photoUrl} alt="" className="w-full h-72 rounded-lg rounded-b-none" />

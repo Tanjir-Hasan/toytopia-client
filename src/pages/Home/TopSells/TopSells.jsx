@@ -6,7 +6,7 @@ const TopSells = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/topSell')
+        fetch('https://toytopia-server-nine.vercel.app/topSell')
             .then(res => res.json())
             .then(data => setItems(data))
     }, [])
